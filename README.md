@@ -4,13 +4,13 @@ This project is a demonstration of a microservices architecture built with NestJ
 This microservices system is designed to showcase how to build scalable, maintainable, and decoupled backend applications using modern technologies. The services communicate asynchronously via NATS, and all are containerized for easy deployment.
 
 # Services
-## API Gateway:
+API Gateway:
 Acts as the entry point for client requests. It receives HTTP requests and routes them to the appropriate microservice using NATS messaging.
-## Users Microservice:
+Users Microservice:
 Handles all user-related operations, such as creating and managing user accounts. It connects to a MySQL database to store user data and uses TypeORM for data modeling.
-## Payments Microservice:
+**Payments Microservice:**
 Manages payment-related operations, linking payments to users. It also uses MySQL and TypeORM for data persistence.
-## NATS:
+**NATS:**
 A high-performance messaging system used for communication between the microservices.
 ## MySQL:
 The relational database used by both the Users and Payments microservices.
